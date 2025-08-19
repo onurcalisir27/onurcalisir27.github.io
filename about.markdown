@@ -1,24 +1,59 @@
 ---
 layout: page
-title: About Me
+title: About Onur
 permalink: /about/
 ---
-## Who is Onur?
-<div class="about-intro" style="display: flex; align-items: flex-start; gap: 20px; margin-bottom: 30px; flex-wrap: wrap;">
-<img src="/assets/images/mountain.jpg" alt="Robot Project" width="400">
-  <div style="flex: 1; min-width: 300px;">
-    <p>Hi, hello, my name is Onur (I pronounce it Honor). I am a graduate student pursuing his MS in Mechanical Engineering at Columbia University with a concentration in Robotics and Control Systems. I am originally from Istanbul, Turkey, but I've completed my undergraduate studies at University of California, Los Angeles (UCLA) in 2024. </p>
+
+<div class="about-hero">
+  <div class="about-intro">
+    <img src="/assets/images/mountain.jpg" alt="Onur in nature" width="300">
+    <div style="flex: 1; min-width: 300px;">
+      <p>Hello there! I'm Onur (pronounced "Honor"), a mechanical engineer working in the intersection of robotics, control systems and software development. Originally from Turkey, I'm currently pursuing my Masters at Columbia University, where I've discovered my passion about creating autonomous robotic systems that can navigate and interact with our complex world.</p>
+    </div>
   </div>
 </div>
 
+## My Journey
 
-# Write about Curiosity and Living in both Coasts of the Cout
- Outside of school and work, I enjoy exploring nature, hiking, and biking. I'm also a big history nerd, and I love reading about stories from our past.
+<div class="journey-timeline">
+  <div class="timeline-item">
+    <h3>New York - Columbia University (2024-Present)</h3>
+    <p><strong>MS in Mechanical Engineering - Robotics & Control</strong></p>
+    <p>Diving deep into advanced control theory, robot learning, reinforcement learning, and autonomous systems. Currently developing learning-based controllers and exploring the intersection of AI and robotics.</p>
+  </div>
 
-## What do I do?
+  <div class="timeline-item">
+    <h3>Los Angeles - UCLA (2020-2024)</h3>
+    <p><strong>BS in Mechanical Engineering</strong></p>
+    <p>Gained experience in CAD design, manufacturing processes and rapid prototyping, and began my journey into programming and control systems.</p>
+  </div>
 
- I am working to become a Robotics Software Engineer. I am passionate about Autonomous Systems, Learning Controllers, and all things robotics! I am experienced in programming in C++, Python, ROS, and MATLAB; educated in machine learning algorithms, optimization methods, and learning based models.
+  <div class="timeline-item">
+    <h3>Istanbul, Turkey</h3>
+    <p><strong>Early Life</strong></p>
+    <p>Born and raised in one of the world's most culturally rich cities instilled in me a perspective and appreciation for how technology can connect diverse communities across the world.</p>
+  </div>
+</div>
 
- Alonside my software skills, I am also trained in CAD software(OnShape, SolidWorks, AutoCAD), 3D Printing and Rapid Prototyping, and Electronics/Mechatronics.
+<div class="about-section">
+  <h2>Research Interests</h2>
+  <p>My current research is on <strong>Learning-Based Nonlinear Adaptive Control</strong> for mobile robots in repetitive environments to learn and traverse complex environments. I'm working on an autonomous rover project that combines:</p>
+  <ul style="margin-left: 20px;">
+    <li><strong>Mechanical Design:</strong> Custom designed chassis and parts for motor and sensor integration</li>
+    <li><strong>Perception:</strong> RGBD Computer vision and sensor fusion for environment processing</li>
+    <li><strong>Adaptive Control:</strong> Implementing adaptive controllers that learn and improve over time</li>
+    <li><strong>Software Stack:</strong> ROS2 software stack for communication between subsystems of the robot</li>
+  </ul>
 
-  For my research project I have combined my software and hardware skills to build an autonomous rover, starting from the CADing and wiring of the components to writing ROS code to control my robot to autonomously navigate! Read more about my projects: [**here**](/project/)
+  <p>What excites me most is the interdisciplinary nature of modern robotics. Every project requires me to think like a mechanical engineer, a software engineer, and a systems engineer. This complexity is what makes each day in robotics feel like solving a new problem, with new skills to learn.</p>
+</div>
+
+<div class="about-section">
+  <h2>Looking Ahead</h2>
+   <p>I believe we're at the dawn of the Physical AI revolution, where intelligent systems aren't only processing information, but actively engaging with and improving our world. My goal is to contribute to this transformation by developing robust, self-learning robots that can operate safely alongside humans.</p>
+   <p>As I progress through my master's program, I'm actively seeking opportunities to contribute to cutting-edge robotics research and development. I'm particularly interested in roles where I can work on autonomous systems, learning-based control, and the practical deployment of AI in physical systems.</p>
+</div>
+
+---
+
+*Want to collaborate or learn more about my work? Feel free to [reach out](mailto:{{ site.email }}) – I'm always excited to discuss robotics, share experiences, or explore new opportunities!*

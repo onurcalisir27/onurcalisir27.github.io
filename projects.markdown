@@ -4,7 +4,7 @@ title: Projects
 permalink: /projects/
 ---
 
-# Some Stuff I Made 
+# Some Stuff I Made
 
 ### Learning Adaptive Control for Autonomous Navigation
 
