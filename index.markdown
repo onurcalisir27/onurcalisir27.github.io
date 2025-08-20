@@ -1,5 +1,7 @@
 ---
 layout: page
+Title: Home
+permalink:
 ---
 
 <div class="intro-section">

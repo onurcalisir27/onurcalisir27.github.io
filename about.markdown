@@ -1,25 +1,26 @@
 ---
 layout: page
-title: About Onur
+title: About Me
 permalink: /about/
 ---
 
 <div class="about-hero">
+    <h1>About Onur</h1>
   <div class="about-intro">
-    <img src="/assets/images/mountain.jpg" alt="Onur in nature" width="300">
+    <img src="/assets/images/onur1.png" alt="Onur poster" width="300">
     <div style="flex: 1; min-width: 300px;">
       <p>Hello there! I'm Onur (pronounced "Honor"), a mechanical engineer working in the intersection of robotics, control systems and software development. Originally from Turkey, I'm currently pursuing my Masters at Columbia University, where I've discovered my passion about creating autonomous robotic systems that can navigate and interact with our complex world.</p>
+      <p>What excites me most is the interdisciplinary nature of modern robotics. Every project requires me to think like a mechanical engineer, a software engineer, and a systems engineer. This complexity is what makes each day in robotics feel like solving a new problem, with new skills to learn.</p>
+
     </div>
   </div>
 </div>
-
-## My Journey
 
 <div class="journey-timeline">
   <div class="timeline-item">
     <h3>New York - Columbia University (2024-Present)</h3>
     <p><strong>MS in Mechanical Engineering - Robotics & Control</strong></p>
-    <p>Diving deep into advanced control theory, robot learning, reinforcement learning, and autonomous systems. Currently developing learning-based controllers and exploring the intersection of AI and robotics.</p>
+    <p>Coursework in advanced control theory (Adaptive, Model Predictive), robot learning, reinforcement learning, and autonomous systems. Currently developing learning-based controllers and exploring the intersection of AI and robotics.</p>
   </div>
 
   <div class="timeline-item">
@@ -44,8 +45,6 @@ permalink: /about/
     <li><strong>Adaptive Control:</strong> Implementing adaptive controllers that learn and improve over time</li>
     <li><strong>Software Stack:</strong> ROS2 software stack for communication between subsystems of the robot</li>
   </ul>
-
-  <p>What excites me most is the interdisciplinary nature of modern robotics. Every project requires me to think like a mechanical engineer, a software engineer, and a systems engineer. This complexity is what makes each day in robotics feel like solving a new problem, with new skills to learn.</p>
 </div>
 
 <div class="about-section">
