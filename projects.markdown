@@ -102,7 +102,6 @@ class: projects-page
     </div>
   </div>
 
-
   <div class="project-card">
     <div class="project-card-image">
       <img src="/assets/images/ik.png" alt="Inverse Kinematics Controller">

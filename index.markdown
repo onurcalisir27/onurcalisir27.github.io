@@ -26,7 +26,7 @@ CAD Design using SolidWorks, Catia, Onshape. FDM, SLA, SLS printing. Soldering a
 
 <div class="interest-card">
 <strong>Software Development</strong><br>
-Programming in C++, Python, and Lua. Proficient in ROS/ROS2, Gazebo Sim, Linux, Git, and SQL
+Programming in C++, Python, and CSS. Proficient in ROS/ROS2, Gazebo Sim, Linux, Git, and SQL
 </div>
 
 <div class="interest-card">
