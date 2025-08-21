@@ -21,22 +21,22 @@ permalink:
 <div class="interests-grid">
 <div class="interest-card">
 <strong>Design & Manufacturing</strong><br>
-CAD Design using SolidWorks, Catia, Onshape. FDM, SLA, SLS printing. Soldering and PCB Design.
+CAD Design using SolidWorks, Catia, Onshape. FDM, SLA, SLS printing. Soldering and PCB Design
 </div>
 
 <div class="interest-card">
 <strong>Software Development</strong><br>
-Programming in C++, Python, and Lua. Proficient in ROS/ROS2, Gazebo Sim, Linux, Git, and SQL.
+Programming in C++, Python, and Lua. Proficient in ROS/ROS2, Gazebo Sim, Linux, Git, and SQL
 </div>
 
 <div class="interest-card">
 <strong>AI & Machine Learning</strong><br>
-Implementing Neural Networks using PyTorch, TensorFlow, and OpenCV. Reinforcement Learning, Diffusion, Imitation Learning.
+Implementing Neural Networks using PyTorch, TensorFlow, and OpenCV. Reinforcement Learning, Diffusion, Imitation Learning
 </div>
 
 <div class="interest-card">
 <strong>Control & Optimization</strong><br>
-MATLAB and Simulink for developing Optimal Controllers such as LQR, MPC, Pole Placement and Adaptive Controllers.
+MATLAB and Simulink for developing Optimal Controllers such as LQR, MPC, Pole Placement and Adaptive Controllers
 </div>
 
 </div>

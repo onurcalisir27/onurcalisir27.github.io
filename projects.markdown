@@ -6,69 +6,38 @@ class: projects-page
 ---
 
 <div class="projects-hero">
-  <h1>My Projects</h1>
-  <p>Portfolio of projects I have worked on during my education and professional experience. My work combines mechanical design, software development and systems engineering.</p>
+  <h1>Projects</h1>
+  <p>My portfolio of projects I have worked on during my education and professional experience. My work combines mechanical design, software development and systems engineering.</p>
 </div>
 
-<!-- Featured Project -->
-<div class="featured-project">
-  <div class="featured-content">
-    <div class="featured-image">
-      <div class="image-gallery">
-        <img src="/assets/images/robot-main.jpg" alt="Autonomous Robot - Main View" id="featured-image">
-        <button class="gallery-nav prev" onclick="previousImage()">&larr;</button>
-        <button class="gallery-nav next" onclick="nextImage()">&rarr;</button>
-        <div class="gallery-dots">
-          <span class="gallery-dot active" onclick="currentImage(1)"></span>
-          <span class="gallery-dot" onclick="currentImage(2)"></span>
-          <span class="gallery-dot" onclick="currentImage(3)"></span>
-        </div>
-      </div>
+
+<div class="projects-grid">
+
+  <div class="project-card">
+    <div class="project-card-image">
+      <img src="/assets/images/robot5.png" alt="Top View">
+      <img src="/assets/images/robot6.png" alt="Side View">
     </div>
-
-    <div class="featured-details">
-      <h2 class="project-title">Autonomous Navigation Rover</h2>
-      <p class="project-subtitle">Learning-Based Control & Computer Vision</p>
-
-      <div class="project-description">
-        <p>A comprehensive robotics project that combines mechanical design, computer vision, and adaptive control systems. This autonomous rover demonstrates end-to-end robotics development, from CAD design and hardware integration to ROS-based software architecture and machine learning algorithms.</p>
-
-        <p>The robot uses a combination of LiDAR, cameras, and IMU sensors for localization and mapping, while implementing learning-based controllers that adapt to different terrain conditions. The project showcases the full robotics pipeline: perception, planning, control, and execution.</p>
-
-        <p><strong>Key Achievements:</strong> Successfully navigates complex indoor environments, implements SLAM for real-time mapping, and demonstrates adaptive behavior in various terrain conditions.</p>
+    <div class="project-card-content">
+      <h3>Autonomous Rover - Learning-Adaptive Control Research</h3>
+      <p class="project-card-subtitle">Learning-Based Adaptive Control for Autonomous Mobile Robots</p>
+      <p>A flexible C++ library designed as a ROS2 Control hardware interface plugin for differential drive mobile robots, offering hardware abstraction for and a clean interface. DiffDrivePi features implementations of arbitrary DC motor control through H-bridge setups, thread free velocity calculation from quadrature encoders, and PID velocity control .</p>
+      <p>The library features the AutonomousRover plugin implementation with comprehensive configurability for diverse robotic applications using Raspberry Pi4. The library is built using the Pigpio library, and a script is included to install pigpio alongside the source code.</p>
+      <div class="tech-badges">
+        <span class="tech-badge">ROS2</span>
+        <span class="tech-badge">Nav2</span>
+        <span class="tech-badge">C++</span>
+        <span class="tech-badge">Python</span>
+        <span class="tech-badge">Mobile Robots</span>
+        <span class="tech-badge">Sensor Fusion</span>
+        <span class="tech-badge">RTAB Mapping</span>
+       <span class="tech-badge">RGBD Perception</span>
       </div>
-
-      <div class="tech-stack">
-        <h4>Technologies Used:</h4>
-        <div class="tech-badges">
-          <span class="tech-badge">ROS2</span>
-          <span class="tech-badge">Python</span>
-          <span class="tech-badge">C++</span>
-          <span class="tech-badge">OpenCV</span>
-          <span class="tech-badge">PyTorch</span>
-          <span class="tech-badge">SolidWorks</span>
-          <span class="tech-badge">Gazebo</span>
-          <span class="tech-badge">Linux</span>
-        </div>
-      </div>
-
       <div class="project-actions">
-        <a href="https://github.com/onurcalisir27/LearningAdaptive" class="project-btn">
-          📂 GitHub Repository
-        </a>
-        <a href="/assets/docs/rover-documentation.pdf" class="project-btn secondary">
-          📄 Technical Documentation
-        </a>
-        <a href="https://youtube.com/watch?v=demo" class="project-btn secondary">
-          🎥 Demo Video
-        </a>
+        <a href="https://github.com/onurcalisir27/LearningAdaptive" class="project-btn">📂 GitHub</a>
       </div>
     </div>
   </div>
-</div>
-
-<!-- Secondary Projects Grid -->
-<div class="projects-grid">
 
   <div class="project-card">
     <div class="project-card-image">
@@ -82,6 +51,7 @@ class: projects-page
       <p>The library features the AutonomousRover plugin implementation with comprehensive configurability for diverse robotic applications using Raspberry Pi4. The library is built using the Pigpio library, and a script is included to install pigpio alongside the source code.</p>
       <div class="tech-badges">
         <span class="tech-badge">ROS2</span>
+        <span class="tech-badge">ROS2 Control</span>
         <span class="tech-badge">C++</span>
         <span class="tech-badge">Mobile Robots</span>
         <span class="tech-badge">PID Control</span>
@@ -95,22 +65,23 @@ class: projects-page
 
   <div class="project-card">
     <div class="project-card-image">
-      <img src="/assets/images/robot3.jpg" alt="Top View">
+      <img src="/assets/images/robot_final.png" alt="Top View">
+      <img src="/assets/images/mpc-plot.png" alt="Top View">
     </div>
     <div class="project-card-content">
       <h3>MPC-ISM Controller for 3 DOF Robot Manipulator</h3>
       <p class="project-card-subtitle">Model Predictive and Sliding Mode Controllers on MATLAB</p>
-      <p>A flexible C++ library designed as a ROS2 Control hardware interface plugin for differential drive mobile robots, offering hardware abstraction for and a clean interface. DiffDrivePi features implementations of arbitrary DC motor control through H-bridge setups, thread free velocity calculation from quadrature encoders, and PID velocity control .</p>
-      <p>The library features the AutonomousRover plugin implementation with comprehensive configurability for diverse robotic applications using Raspberry Pi4. The library is built using the Pigpio library, and a script is included to install pigpio alongside the source code.</p>
+      <p>This project implements a hierarchical control system for a 3-DOF robot manipulator by combining Model Predictive Control (MPC) with Integral Sliding Mode (ISM) control, based on an IEEE paper by Incremona et al.</p>
+      <p>  The system features a three-layer architecture: inverse dynamics linearization, high-frequency ISM for uncertainty rejection, and MPC for optimal trajectory tracking with constraints. The implementation was developed in MATLAB with custom classes for robot dynamics, controllers, and simulation.</p>
       <div class="tech-badges">
-        <span class="tech-badge">ROS2</span>
-        <span class="tech-badge">C++</span>
-        <span class="tech-badge">Mobile Robots</span>
-        <span class="tech-badge">PID Control</span>
-       <span class="tech-badge">Hardware Abstraction</span>
+        <span class="tech-badge">Model Predictive Control</span>
+        <span class="tech-badge">MATLAB</span>
+        <span class="tech-badge">Optimal Control</span>
+        <span class="tech-badge">Sliding Mode Control</span>
       </div>
       <div class="project-actions">
-        <a href="https://github.com/onurcalisir27/DiffDrivePi" class="project-btn">📂 GitHub</a>
+        <a href="https://github.com/onurcalisir27/MPC-Project" class="project-btn">📂 GitHub</a>
+        <a href="/assets/documents/MPC_Project.pdf" class="project-btn">📄 Report</a>
       </div>
     </div>
   </div>
@@ -125,16 +96,17 @@ class: projects-page
     <div class="project-card-content">
       <h3>ROS2 Common Robotics Algorithms</h3>
       <p class="project-card-subtitle">Inverse Kinematics Control - RRT Path Planning - Extended Kalman Filter</p>
-      <p>A flexible C++ library designed as a ROS2 Control hardware interface plugin for differential drive mobile robots, offering hardware abstraction for and a clean interface. DiffDrivePi features implementations of arbitrary DC motor control through H-bridge setups, thread free velocity calculation from quadrature encoders, and PID velocity control .</p>
-      <p>The library features the AutonomousRover plugin implementation with comprehensive configurability for diverse robotic applications using Raspberry Pi4. The library is built using the Pigpio library, and a script is included to install pigpio alongside the source code.</p>
+      <p>As part of MECS4603 Applied Robotics Algorithms course, three commonly used robotics algorithms were implemented on ROS2.</p>
+      <p>First is a Cartesian and Inverse Kinematics Based Controller for a Franka Panda 7 DOF Robotic Manipulator. The interactive rings around the end effector of the robot allows for position control through Jacobian Inverse Control.</p>
+      <p>Next is a RRT Based Path planning algorithm for the UR5 Robot Manipulator, which calculates a collision free path for the robot to travel from an initial point to the goal point.
+      The last is Extended Kalman Filter for a 2D mobile robot which uses nearby landmark positions for absolute localization.</p>
       <div class="tech-badges">
         <span class="tech-badge">ROS2</span>
         <span class="tech-badge">Python</span>
-        <span class="tech-badge">MoveIt2</span>
-        <span class="tech-badge">Probabilistic Robotics</span>
+        <span class="tech-badge">RRT</span>
+        <span class="tech-badge">Kalman Filter</span>
       </div>
       <div class="project-actions">
-        <a href="https://github.com/onurcalisir27/DiffDrivePi" class="project-btn">📂 GitHub</a>
       </div>
     </div>
   </div>

@@ -271,15 +271,16 @@ h1.post-title {
 }
 
 .featured-project:hover {
-  transform: translateY(-5px);
+  transform: translateY(-3px);
   box-shadow: 0 15px 40px rgba(0,0,0,0.15);
 }
 
 .featured-content {
   display: grid;
-  grid-template-columns: 45% 55%;
+  grid-template-columns: 45% 55%; /* More balanced split */
   gap: 0;
-  min-height: 500px;
+  min-height: 400px; /* Reduced height */
+  max-height: 500px; /* Cap the maximum height */
 }
 
 .featured-image {
@@ -289,6 +290,7 @@ h1.post-title {
   display: flex;
   align-items: center;
   justify-content: center;
+  min-height: 400px; /* Match the content height */
 }
 
 .featured-image img {
@@ -299,14 +301,16 @@ h1.post-title {
 }
 
 .featured-project:hover .featured-image img {
-  transform: scale(1.05);
+  transform: scale(1.03); /* Reduced scale effect */
 }
 
 .image-gallery {
   position: relative;
   height: 100%;
+  width: 100%;
 }
 
+/* Gallery controls - keep same */
 .gallery-nav {
   position: absolute;
   top: 50%;
@@ -314,10 +318,10 @@ h1.post-title {
   background: rgba(255,255,255,0.9);
   border: none;
   border-radius: 50%;
-  width: 40px;
-  height: 40px;
+  width: 35px;
+  height: 35px;
   cursor: pointer;
-  font-size: 18px;
+  font-size: 16px;
   color: #2c3e50;
   display: flex;
   align-items: center;
@@ -330,26 +334,21 @@ h1.post-title {
   box-shadow: 0 4px 12px rgba(0,0,0,0.2);
 }
 
-.gallery-nav.prev {
-  left: 15px;
-}
-
-.gallery-nav.next {
-  right: 15px;
-}
+.gallery-nav.prev { left: 10px; }
+.gallery-nav.next { right: 10px; }
 
 .gallery-dots {
   position: absolute;
-  bottom: 20px;
+  bottom: 15px;
   left: 50%;
   transform: translateX(-50%);
   display: flex;
-  gap: 8px;
+  gap: 6px;
 }
 
 .gallery-dot {
-  width: 10px;
-  height: 10px;
+  width: 8px;
+  height: 8px;
   border-radius: 50%;
   background: rgba(255,255,255,0.5);
   cursor: pointer;
@@ -362,12 +361,12 @@ h1.post-title {
 }
 
 .featured-details {
-  padding: 40px;
+  padding: 30px; /* Reduced padding */
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  overflow-y: auto; /* Allow scrolling if content is too long */
 }
-
 .project-title {
   font-size: 2.2em !important;
   color: #2c3e50 !important;
