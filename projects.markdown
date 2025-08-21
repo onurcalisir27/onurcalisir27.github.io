@@ -14,7 +14,7 @@ class: projects-page
 <div class="featured-project">
   <div class="project-card featured">
     <div class="project-card-image featured-gallery">
-      <img id="featured-image" src="/assets/images/robot5.png" alt="Featured Project">
+      <img id="featured-image" src="/assets/images/robot5.jpg" alt="Featured Project">
       <button class="gallery-nav prev" onclick="previousImage()">‹</button>
       <button class="gallery-nav next" onclick="nextImage()">›</button>
       <div class="gallery-dots">
@@ -26,7 +26,7 @@ class: projects-page
     <div class="project-card-content featured-content">
       <h3>Autonomous Rover - Learning-Adaptive Control Research</h3>
       <p class="project-card-subtitle">Learning-Based Adaptive Control for Autonomous Mobile Robots</p>
-      <p>A comprehensive research project exploring learning-based adaptive control strategies for autonomous mobile robots. This project combines theoretical control concepts with practical implementation, featuring advanced sensor fusion, real-time adaptation algorithms, and robust navigation capabilities.</p>
+      <p>Comprehensive research project exploring learning-based adaptive control strategies for autonomous mobile robots. This project combines theoretical control concepts with practical implementation, featuring advanced sensor fusion, real-time adaptation algorithms, and robust navigation capabilities.</p>
       <p>The system incorporates RGBD perception for environmental understanding, RTAB mapping for simultaneous localization and mapping, and Nav2 integration for advanced path planning. The learning component allows the robot to adapt its control strategy based on environmental feedback and performance metrics.</p>
 
       <div class="tech-badges">
@@ -198,7 +198,7 @@ class: projects-page
 <script>
 let currentImageIndex = 1;
 const featuredImages = [
-  "/assets/images/robot5.png",
+  "/assets/images/robot7.png",
   "/assets/images/nav2.png",
   "/assets/images/AutonomousRover_BlockDiagram.png"
 ];
