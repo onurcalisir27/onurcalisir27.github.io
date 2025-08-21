@@ -10,19 +10,25 @@ class: projects-page
   <p>My portfolio of projects I have worked on during my education and professional experience. My work combines mechanical design, software development and systems engineering.</p>
 </div>
 
+<!-- Featured Project Section -->
+<div class="featured-project">
+  <div class="project-card featured">
+    <div class="project-card-image featured-gallery">
+      <img id="featured-image" src="/assets/images/robot5.png" alt="Featured Project">
+      <button class="gallery-nav prev" onclick="previousImage()">‹</button>
+      <button class="gallery-nav next" onclick="nextImage()">›</button>
+      <div class="gallery-dots">
+        <span class="gallery-dot active" onclick="currentImage(1)"></span>
+        <span class="gallery-dot" onclick="currentImage(2)"></span>
+        <span class="gallery-dot" onclick="currentImage(3)"></span>
 
-<div class="projects-grid">
-
-  <div class="project-card">
-    <div class="project-card-image">
-      <img src="/assets/images/robot5.png" alt="Top View">
-      <img src="/assets/images/robot6.png" alt="Side View">
+      </div>
     </div>
-    <div class="project-card-content">
+    <div class="project-card-content featured-content">
       <h3>Autonomous Rover - Learning-Adaptive Control Research</h3>
       <p class="project-card-subtitle">Learning-Based Adaptive Control for Autonomous Mobile Robots</p>
-      <p>A flexible C++ library designed as a ROS2 Control hardware interface plugin for differential drive mobile robots, offering hardware abstraction for and a clean interface. DiffDrivePi features implementations of arbitrary DC motor control through H-bridge setups, thread free velocity calculation from quadrature encoders, and PID velocity control .</p>
-      <p>The library features the AutonomousRover plugin implementation with comprehensive configurability for diverse robotic applications using Raspberry Pi4. The library is built using the Pigpio library, and a script is included to install pigpio alongside the source code.</p>
+      <p>A comprehensive research project exploring learning-based adaptive control strategies for autonomous mobile robots. This project combines theoretical control concepts with practical implementation, featuring advanced sensor fusion, real-time adaptation algorithms, and robust navigation capabilities.</p>
+      <p>The system incorporates RGBD perception for environmental understanding, RTAB mapping for simultaneous localization and mapping, and Nav2 integration for advanced path planning. The learning component allows the robot to adapt its control strategy based on environmental feedback and performance metrics.</p>
       <div class="tech-badges">
         <span class="tech-badge">ROS2</span>
         <span class="tech-badge">Nav2</span>
@@ -31,13 +37,22 @@ class: projects-page
         <span class="tech-badge">Mobile Robots</span>
         <span class="tech-badge">Sensor Fusion</span>
         <span class="tech-badge">RTAB Mapping</span>
-       <span class="tech-badge">RGBD Perception</span>
+        <span class="tech-badge">RGBD Perception</span>
       </div>
       <div class="project-actions">
         <a href="https://github.com/onurcalisir27/LearningAdaptive" class="project-btn">📂 GitHub</a>
+        <a href="/assets/documents/WorkshopPoster.pdf" class="project-btn">📄 Poster presented at NESCW'25</a>
+        <a href="/assets/images/IMG_1507.MOV" class="project-btn secondary">🎥 Demo Video</a>
       </div>
     </div>
   </div>
+</div>
+
+<!-- Other Projects Section -->
+<div class="section-divider">
+  <h2>Other Projects</h2>
+</div>
+<div class="projects-grid">
 
   <div class="project-card">
     <div class="project-card-image">
@@ -179,27 +194,27 @@ class: projects-page
     </div>
   </div>
 
-
-<!-- Simple JavaScript for image gallery -->
 <script>
 let currentImageIndex = 1;
-const images = [
-  "/assets/images/robot-main.jpg",
-  "/assets/images/robot-side.jpg",
-  "/assets/images/robot-action.jpg"
+const featuredImages = [
+  "/assets/images/robot5.png",
+  "/assets/images/robot6.png",
 ];
 
 function showImage(n) {
   const img = document.getElementById('featured-image');
   const dots = document.querySelectorAll('.gallery-dot');
 
-  if (n > images.length) currentImageIndex = 1;
-  if (n < 1) currentImageIndex = images.length;
+  if (n > featuredImages.length) currentImageIndex = 1;
+  if (n < 1) currentImageIndex = featuredImages.length;
 
-  img.src = images[currentImageIndex - 1];
+  img.src = featuredImages[currentImageIndex - 1];
+  img.alt = `Featured Project Image ${currentImageIndex}`;
 
   dots.forEach(dot => dot.classList.remove('active'));
-  dots[currentImageIndex - 1].classList.add('active');
+  if (dots[currentImageIndex - 1]) {
+    dots[currentImageIndex - 1].classList.add('active');
+  }
 }
 
 function nextImage() {
@@ -216,5 +231,11 @@ function currentImage(n) {
   currentImageIndex = n;
   showImage(currentImageIndex);
 }
+
+// Initialize the gallery
+document.addEventListener('DOMContentLoaded', function() {
+  showImage(1);
+});
 </script>
+
 
