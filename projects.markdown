@@ -26,15 +26,15 @@ class: projects-page
     <div class="project-card-content featured-content">
       <h3>Autonomous Rover - Learning-Adaptive Control Research</h3>
       <p class="project-card-subtitle">Learning-Based Adaptive Control for Autonomous Mobile Robots</p>
-      <p>Comprehensive research project exploring learning-based adaptive control strategies for autonomous mobile robots. This project combines theoretical control concepts with practical implementation, featuring advanced sensor fusion, real-time adaptation algorithms, and robust navigation capabilities.</p>
-      <p>The system incorporates RGBD perception for environmental understanding, RTAB mapping for simultaneous localization and mapping, and Nav2 integration for advanced path planning. The learning component allows the robot to adapt its control strategy based on environmental feedback and performance metrics.</p>
-
+      <p>This research project implements learning-adaptive control strategies for autonomous mobile robots in repetitive environments, supervised by Dr. Homayoon Beigi at Columbia's Nonlinear Adaptive Control Research Lab. The custom-built differential drive AMR features a distributed architecture with dual Raspberry Pi units; Pi4 handling hardware control through a custom ROS2 Control plugin and sensor management, while Pi5 executes motion planning via a specialized Nav2 controller plugin that implements the learning-adaptive algorithm.</p>
+      <p>By bridging theoretical adaptive control concepts with real-world autonomous navigation, this project demonstrates how robots can intelligently improve their performance through experience in structured environments. The learning-adaptive approach is particularly valuable for AMRs in warehouses, manufacturing facilities, or delivery systems where robots follow similar routes repeatedly, allowing them to optimize their control strategies and achieve superior trajectory tracking performance over time.</p>
       <div class="tech-badges">
         <span class="tech-badge">ROS2</span>
         <span class="tech-badge">Nav2</span>
         <span class="tech-badge">C++</span>
         <span class="tech-badge">Python</span>
         <span class="tech-badge">Mobile Robots</span>
+        <span class="tech-badge">Raspberry Pi</span>
         <span class="tech-badge">Sensor Fusion</span>
         <span class="tech-badge">RTAB Mapping</span>
         <span class="tech-badge">RGBD Perception</span>
