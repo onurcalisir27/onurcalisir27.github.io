@@ -21,7 +21,6 @@ class: projects-page
         <span class="gallery-dot active" onclick="currentImage(1)"></span>
         <span class="gallery-dot" onclick="currentImage(2)"></span>
         <span class="gallery-dot" onclick="currentImage(3)"></span>
-
       </div>
     </div>
     <div class="project-card-content featured-content">
@@ -29,6 +28,7 @@ class: projects-page
       <p class="project-card-subtitle">Learning-Based Adaptive Control for Autonomous Mobile Robots</p>
       <p>A comprehensive research project exploring learning-based adaptive control strategies for autonomous mobile robots. This project combines theoretical control concepts with practical implementation, featuring advanced sensor fusion, real-time adaptation algorithms, and robust navigation capabilities.</p>
       <p>The system incorporates RGBD perception for environmental understanding, RTAB mapping for simultaneous localization and mapping, and Nav2 integration for advanced path planning. The learning component allows the robot to adapt its control strategy based on environmental feedback and performance metrics.</p>
+
       <div class="tech-badges">
         <span class="tech-badge">ROS2</span>
         <span class="tech-badge">Nav2</span>
@@ -39,6 +39,7 @@ class: projects-page
         <span class="tech-badge">RTAB Mapping</span>
         <span class="tech-badge">RGBD Perception</span>
       </div>
+
       <div class="project-actions">
         <a href="https://github.com/onurcalisir27/LearningAdaptive" class="project-btn">📂 GitHub</a>
         <a href="/assets/documents/WorkshopPoster.pdf" class="project-btn">📄 Poster presented at NESCW'25</a>
@@ -198,7 +199,8 @@ class: projects-page
 let currentImageIndex = 1;
 const featuredImages = [
   "/assets/images/robot5.png",
-  "/assets/images/robot6.png",
+  "/assets/images/nav2.png",
+  "/assets/images/AutonomousRover_BlockDiagram.png"
 ];
 
 function showImage(n) {
